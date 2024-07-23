@@ -10,19 +10,19 @@ tokio = { version = "1.29.1", features = ["full"] }
 clap = {version = "4", features = ["derive"]}
 eyre = "0.6.8"
 
-alloy-primitives = "0.7.7"
 alloy-provider = { version = "0.2", default-features = false }
 alloy-rpc-types = { version = "0.2", features = ["eth"] }
 alloy-serde = { version = "0.2", default-features = false }
 alloy-transport = { version = "0.2", default-features = false }
 alloy-rpc-client = "0.2"
 alloy-transport-http = "0.2"
-alloy-sol-types = "0.2"
-
+alloy-sol-types = "0.7.7"
+alloy-primitives = "0.7.7"
 foundry-fork-db = "0.2.0"
-foundry-evm = { git = "https://github.com/foundry-rs/foundry", package = "foundry-evm" }
-foundry-common = { git = "https://github.com/foundry-rs/foundry", package = "foundry-common" }
-foundry-config ={ git = "https://github.com/foundry-rs/foundry", package = "foundry-config" }
+
+foundry-evm = { git = "https://github.com/foundry-rs/foundry", package = "foundry-evm", rev = "fe2acca4" }
+foundry-common = { git = "https://github.com/foundry-rs/foundry", package = "foundry-common", rev = "fe2acca4"  }
+foundry-config ={ git = "https://github.com/foundry-rs/foundry", package = "foundry-config", rev = "fe2acca4"  }
 
 revm = { version = "12.1.0", default-features = false }
 revm-primitives = { version = "7.1.0", default-features = false }
