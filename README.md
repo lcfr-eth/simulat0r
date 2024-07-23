@@ -20,6 +20,12 @@ Options:
 ## Example 
 call ```skim()``` on ```0x48ae077696196cd604c0AF89c098Effd285ccf01``` at block ```20065826``` and check the execution result & logs produced:
 
+encode call using cast:
+```bash
+cast calldata "skim(address)" 0x48ae077696196cd604c0AF89c098Effd285ccf01
+0xbc25cf7700000000000000000000000048ae077696196cd604c0af89c098effd285ccf01
+```
+
 ```bash
 cargo run -- --to 0x48ae077696196cd604c0AF89c098Effd285ccf01 --data 0xbc25cf7700000000000000000000000048ae077696196cd604c0af89c098effd285ccf01 --block-number 20065826
 
